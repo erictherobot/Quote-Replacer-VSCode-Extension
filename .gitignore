@@ -1,0 +1,14 @@
+# Ignore the output directory
+/dist
+
+# Ignore node_modules directory
+/node_modules
+
+# Ignore VSCode specific files
+.vscode
+
+# Ignore compiled JavaScript files
+/out
+
+# Ignore any generated VSCode extension package files
+*.vsix
