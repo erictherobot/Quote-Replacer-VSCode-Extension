@@ -1,12 +1,18 @@
 {
   "name": "quotereplacer",
-  "version": "0.0.1",
-  "description": "",
-  "main": "./out/extension.js",
+  "displayName": "Quote Replacer",
+  "version": "0.0.2",
+  "description": "A simple solution to replace Quotes and improper escaping to prevent TypeScript errors in TypeScript files.",
+  "main": "./extension/out/extension.js",
   "publisher": "EricDavidSmith",
+  "categories": [
+    "Linters",
+    "Programming Languages",
+    "Other"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run esbuild-base -- --minify",
-    "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
+    "esbuild-base": "esbuild ./extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
     "esbuild": "npm run esbuild-base -- --sourcemap",
     "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
     "test-compile": "tsc -p ./"
@@ -14,15 +20,16 @@
   "author": "Eric David Smith",
   "license": "ISC",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.8.0"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/erictherobot/Quote-Replacer-VSCode-Extension.git"
   },
-  "categories": [
-    "Other"
-  ],
+  "bugs": {
+    "url": "https://github.com/erictherobot/Quote-Replacer-VSCode-Extension/issues",
+    "email": "erictherobot@gmail.com"
+  },
   "activationEvents": [
     "onCommand:extension.fixApostrophes"
   ],
@@ -36,6 +43,8 @@
   },
   "devDependencies": {
     "esbuild": "^0.18.1",
-    "typescript": "^4.3.2"
-  }
+    "typescript": "^4.3.2",
+    "vscode": "^1.1.37"
+  },
+  "dependencies": {}
 }

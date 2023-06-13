@@ -31,7 +31,7 @@ export function activate(context: vscode.ExtensionContext) {
         .replace(/&#39;/g, "&rsquo;");
 
       // Apply the fix in the editor
-      editor.edit((editBuilder) => {
+      editor.edit((editBuilder: string) => {
         editBuilder.replace(selection, replacedMessage);
       });
     }
