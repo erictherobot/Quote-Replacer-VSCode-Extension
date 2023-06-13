@@ -1,6 +1,3 @@
-# Ignore the output directory
-/dist
-
 # Ignore node_modules directory
 /node_modules
 

@@ -7,6 +7,6 @@
     "esModuleInterop": true,
     "sourceMap": true
   },
-  "include": ["/**/*.ts", "src/extension.ts"],
+  "include": ["/**/*.ts", "extension.ts"],
   "exclude": ["node_modules"]
 }
