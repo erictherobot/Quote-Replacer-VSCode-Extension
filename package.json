@@ -3,6 +3,7 @@
   "displayName": "Quote Replacer",
   "version": "0.0.1",
   "description": "A simple solution to replace Quotes and improper escaping to prevent TypeScript errors in TypeScript files.",
+  "icon": "images/fix-apos-logo-128.png",
   "main": "./out/extension.js",
   "publisher": "EricDavidSmith",
   "categories": [
